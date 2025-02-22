@@ -2,7 +2,7 @@
 title: 'My First Blog Post'
 pubDate: 2025-02-22
 description: 'This is the first post of my new Astro blog.'
-author: '<artin Currie'
+author: 'Martin Currie'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
