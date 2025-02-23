@@ -1,4 +1,5 @@
 ---
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 const pageTitle = "Home";
 import Welcome from '../components/Welcome.astro';
@@ -9,9 +10,8 @@ import Welcome from '../components/Welcome.astro';
         <meta name="viewport" content="width=device-width" />
         <title>{pageTitle}</title>
     </head>
-	<body><a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+	<body>
+        <Navigation />
 		<Welcome />
 	</body>
 </html>
