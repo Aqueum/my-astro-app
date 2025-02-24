@@ -1,19 +1,11 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import Welcome from '../components/FirstComponent.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "New Page";
 ---
-
-<Layout>
-	<Header />
-	<h1>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>
 		Welcome to the first completely new page.  Just wondering what CSS will apply to this
-	</h1>
+	</h2>
 	<p>
 		I guess this is a sentence.  I'm not sure what else to say.
 	</p>
@@ -27,8 +19,4 @@ import Layout from '../layouts/Layout.astro';
 		<li>Two</li>
 		<li>Three</li>
 	</ol>
-	<Footer />
-	        <script>
-            import "../scripts/menu.js";
-        </script>
 </Layout>
